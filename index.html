@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Vera Pizza</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <!-- NAV BAR-->
         <div class="container">
             <div class="row">
@@ -42,7 +44,7 @@
     <main class="main">
 
         <!-- PROMO DEL DÍA -->
-        <section class="main__promo__section">
+        <section data-aos="fade-up" class="main__promo__section">
             <div class="main__promo__section__div1">
                 <div class="promo_zise promo_costo_fondo">
                     
@@ -54,23 +56,23 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./img/promo1.jpg" alt="" class="main__promo__section__img">
+                    <img src="./img/promo2.jpg" alt="" class="main__promo__section__img">
                 </div>
             </div>
             <div class="main__promo__section__button">
-                <div class="voltear">
-                    <label for="" class="main_promo_nav_text">SIGUIENTE</label>
+                <div class="flechas">
+                    <label for="" class="main_promo_nav_text">></label>
                 </div>
             </div>
             <div class="main__promo__section__button">
-                <div class="voltear">
-                    <label for="" class="main_promo_nav_text">ANTERIOR</label>
+                <div class="flechas">
+                    <label for="" class="main_promo_nav_text"><</label>
                 </div>
             </div>
         </section>
 
         <!-- NOSOTROS -->
-        <section class="main__sec__nosotros">
+        <section data-aos="fade-up" class="main__sec__nosotros">
             <div class="main__sec__nosotros">
 
             </div>
@@ -105,5 +107,10 @@
             <p>La Vera Pizza - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
