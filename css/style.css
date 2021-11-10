@@ -8,6 +8,7 @@ color inferior: #FFEFBA
 TIPOGRAFÍA GENERAL. Uso un gris claro o blanco.
 Gris: rgb(100, 100, 100)
 Blanco: rgb(255, 255, 255)
+Fondo: rgb(207,21,42) Rojo
 
 TIPOGRAFÍA DENTRO DE IMAGENES. Fondo oscurecido 
 */
@@ -120,8 +121,8 @@ p {
 .nav__sub_item {
     border: solid 0px white;
     text-align: left;
-    width: 110px;
-    height: 30px;
+    width: 180px;
+    height: 45px;
 }
 
 .nav__link {
@@ -134,20 +135,24 @@ p {
     font-weight: 400;
     height: 100%;
     width: 100%;
-    padding: 5px;
+    padding: 0px;
     
     font-family: 'Oswald', sans-serif;
     font-style: italic;
+    font-size: 1.8rem;
     color: rgb(100, 100, 100);
     transition: all 0.4s;
-    border: solid 0px green;
+    /* border: solid 5px green; */
 }
 
 .nav__select {
     width: 130%;
-    padding: 5px;
+    padding: 0px;
     color: rgb(255, 255, 255);
     background-color: rgb(207,21,42);
+
+    /* border-left: solid 1rem rgb(207,21,42);
+    border-right: solid 1rem rgb(207,21,42); */
 }
 
 /* ###################################################### FOOTER ###################################################### */
@@ -227,11 +232,25 @@ p {
 
 /* ###################################################### MAIN INDEX ###################################################### */
 
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    height: 100px;
+    background-color: rgb(207, 21, 42);
+    color:rgb(230, 230, 230);
+    font-weight: 400;
+    
+
+    border: solid 0px black;
+}
+
 .main__promo__section {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 90% 10%;
     grid-template-rows: auto auto;
+    border: solid 0px black;
 }
 
 .main__promo__section__div1 {
@@ -303,7 +322,125 @@ p {
 }
 
 .main__sec__nosotros {
-    margin-top: 200px;
-    height: 800px;
-    background-color: royalblue;
+    margin-top: 150px;
+    /* background-color: royalblue; */
 }
+
+/* ###################################################### MAIN CARTA ###################################################### */
+
+.body__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic;
+    color:rgb(65, 65, 65);
+    margin: 2rem;
+
+    border: solid 0px green;
+}
+
+.main__carta {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+    margin-top: 3rem;
+
+    border: solid 0px yellow;
+}
+
+.aside {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border: solid 5px black;
+}
+.aside ul {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    position: relative;
+
+    width: 100%;
+
+    border: solid 0px red;
+}
+.aside ul li {
+    list-style: none;
+    font-style: italic;
+}
+.aside ul li a {
+    font-size: 2.3rem;
+}
+
+.section_carta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titulo_carta {
+    width: 100%;
+    background-color: rgb(207,21,42);
+    font-size: 2rem;
+    font-style: italic;
+    color:rgb(230, 230, 230);
+    border: solid 0px green;
+}
+
+
+.tarjeta {
+    display: flex;
+    width: 50%;
+    min-width: 200px;
+    align-items: center;
+
+    background-image: linear-gradient(to right, rgb(255,255,255), rgb(215,215,215));
+}
+.tarjeta label{
+    width: 100%;
+    font-size: 3rem;
+    margin-right: 5px;
+    text-align: center;
+
+    border: solid 0px black;
+}
+.botella {
+    height: 200px;
+}
+.tarjeta_promo {
+    display: flex;
+    width: 100%;
+    min-width: 400px;
+    align-items: center;
+
+    background-image: linear-gradient(to right, rgb(255,255,255), rgb(180,180,180));
+}
+.tarjeta_promo .label_cant{
+    width: 100%;
+    font-size: 5rem;
+    margin-right: 5px;
+    text-align: center;
+
+    border: solid 0px black;
+}
+.tarjeta_promo .label_precio{
+    width: 100%;
+    font-size: 5rem;
+    margin-right: 5px;
+    text-align: left;
+
+    border: solid 0px black;
+}
+

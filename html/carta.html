@@ -1,74 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Vera Pizza</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Vera Pizza</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
 
-    <!-- HEADER -->
-    <header>
-        <!-- NAV BAR-->
-        <div class="container">
-            <div class="row">
-                <a href="/" class="nav__logo">
-                    <img src="../img/logo.png" alt="" class="logo">
-                </a>
-                <nav class="nav">
-                    <ul class = "nav__list">
-                        <li class = "nav__item"><a href="/" class="nav__link">Inicio</a></li>
-                        <li class = "nav__item"><a href="../html/reservas.html" class="nav__link">Reservaciones</a></li>
-                        <li class = "nav__item sub__menu">
-                            <a href="../html/carta.html" class="nav__link nav__select">Carta</a>
-                            <ul class = "nav__sublist">
-                                <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Principal</a></li>
-                                <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Guarniciones</a></li>
-                                <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Bebidas</a></li>
-                                <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Postres</a></li>
-                            </ul>
-                        </li>
-                        <li class = "nav__item"><a href="../html/contacto.html" class="nav__link">Contactános</a></li>
-                        <li class = "nav__item"><a href="/#main__sec__nosotros" class="nav__link">Nosotros</a></li>
-                    </ul>
-                </nav>
+    <body class="body__grid">
+
+        <!-- HEADER -->
+        <header id = "header">
+            <!-- NAV BAR-->
+            <div class="container">
+                <div class="row">
+                    <a href="/" class="nav__logo">
+                        <img src="../img/logo.png" alt="" class="logo">
+                    </a>
+                    <nav class="nav">
+                        <ul class = "nav__list">
+                            <li class = "nav__item"><a href="/" class="nav__link">Inicio</a></li>
+                            <li class = "nav__item"><a href="../html/reservas.html" class="nav__link">Reservaciones</a></li>
+                            <li class = "nav__item sub__menu">
+                                <a href="../html/carta.html" class="nav__link nav__select">Carta</a>
+                                <ul class = "nav__sublist">
+                                    <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Principal</a></li>
+                                    <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Guarniciones</a></li>
+                                    <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Bebidas</a></li>
+                                    <li class = "nav__item nav__sub_item"><a href="" class="nav__link">Postres</a></li>
+                                </ul>
+                            </li>
+                            <li class = "nav__item"><a href="../html/contacto.html" class="nav__link">Contactános</a></li>
+                            <li class = "nav__item"><a href="/#main__sec__nosotros" class="nav__link">Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <main class="main">
+        </header>
 
-    </main>
+        <div><h1>Carta</h1></div>        
 
-    <footer class="footer">
-        <div class="logo__up">
-            <a href="/">
-                <img class="footer__logo" src="../img/logo.png" alt="imagen del ícono de logo empresarial">
-            </a>
-        </div>
-        <div class="subir__up">
-            <a class="subir__u2" href="#header">
-                <img class="footer__flecha" src="../img/chevron-up-solid.svg" alt="">
-            </a>
-        </div>
-        <div class="footer__wsp">
-            <img class="footer__img__wsp" src="../img/whatsapp-brands2.png" alt="">
-        </div>
-        <div class="visita">
-            <p>Visitanos!</p>
-        </div>
-        <div class="footer__ins">
-            <img class="footer__img__ins" src="../img/instagram-brands.svg" alt="">
-        </div>
-        <div class="footer__face">
-            <img class="footer__img__face" src="../img/facebook-brands.svg" alt="">
-        </div>
-        <div class="footer__derechos">
-            <p>La Vera Pizza - Todos los derechos reservados</p>
-        </div>
-    </footer>
-</body>
+        <main class="main__carta">
+
+            
+
+            <aside class="aside">
+                <ul>
+                    <li><a href="#ppal" class="nav__link">Principal</a></li>
+                    <li><a href="#guarnicion" class="nav__link">Guarniciones</a></li>
+                    <li><a href="#bebidas" class="nav__link">Bebidas</a></li>
+                    <li><a href="#postres" class="nav__link">Postres</a></li>
+                </ul>
+            </aside>
+
+            <section class="section_carta" id="ppal">
+
+                <div class="titulo_carta">
+                    <h2>Principales</h2>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="../img/ppal1.jpg" alt="" class="botella">
+                    <label for="">$ 350</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/ppal2.jpg" alt="" class="botella">
+                    <label for="">$ 300</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/ppal3.jpg" alt="" class="botella">
+                    <label for="">$ 280</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/ppal4.jpg" alt="" class="botella">
+                    <label for="">$ 250</label>
+                </div>
+            </section>
+
+            <section class="section_carta" id="guarnicion">
+
+                <div class="titulo_carta">
+                    <h2>Guarniciones</h2>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="../img/guar1.jpg" alt="" class="botella">
+                    <label for="">Puré $ 350</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/guar2.jpg" alt="" class="botella">
+                    <label for="">$ 300</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/guar3.jpg" alt="" class="botella">
+                    <label for="">$ 280</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/guar4.jpg" alt="" class="botella">
+                    <label for="">$ 250</label>
+                </div>
+            </section>
+
+            <section class="section_carta" id="bebidas">
+                
+                <div class="titulo_carta">
+                    <h2>Bebidas</h2>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="../img/corona.jpg" alt="" class="botella">
+                    <label for="">$ 350</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/heineken.jpg" alt="" class="botella">
+                    <label for="">$ 300</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/stella.jpg" alt="" class="botella">
+                    <label for="">$ 280</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/budweiser.jpg" alt="" class="botella">
+                    <label for="">$ 250</label>
+                </div>
+                <div class="tarjeta_promo">
+                    <img src="../img/heineken.jpg" alt="" class="botella promo">
+                    <label for="" class="label_cant">X 2</label>
+                    <label for="" class="label_precio">$ 550</label>
+                </div>
+            </section>
+
+            <section class="section_carta" id="postres">
+                
+                <div class="titulo_carta">
+                    <h2>Postres</h2>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="../img/postre1.jpg" alt="" class="botella">
+                    <label for="">$ 350</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/postre2.jpg" alt="" class="botella">
+                    <label for="">$ 300</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/postre3.jpg" alt="" class="botella">
+                    <label for="">$ 280</label>
+                </div>
+                <div class="tarjeta">
+                    <img src="../img/postre4.jpg" alt="" class="botella">
+                    <label for="">$ 250</label>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="logo__up">
+                <a href="/">
+                    <img class="footer__logo" src="../img/logo.png" alt="imagen del ícono de logo empresarial">
+                </a>
+            </div>
+            <div class="subir__up">
+                <a class="subir__u2" href="#header">
+                    <img class="footer__flecha" src="../img/chevron-up-solid.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__wsp">
+                <img class="footer__img__wsp" src="../img/whatsapp-brands2.png" alt="">
+            </div>
+            <div class="visita">
+                <p>Visitanos!</p>
+            </div>
+            <div class="footer__ins">
+                <img class="footer__img__ins" src="../img/instagram-brands.svg" alt="">
+            </div>
+            <div class="footer__face">
+                <img class="footer__img__face" src="../img/facebook-brands.svg" alt="">
+            </div>
+            <div class="footer__derechos">
+                <p>La Vera Pizza - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </body>
 </html>
